@@ -1,0 +1,123 @@
+﻿.category-picture {
+    text-align: center;
+    min-height: 63px;
+    font-size: 20px;
+    padding-top: 10px;
+    max-width: 50%;
+}
+
+.product-title {
+    font-size: 18px;
+    color: #484848;
+}
+
+.product-sku-COSTCOSku {
+    color: #000;
+    font-size: 13px;
+    width: 100%;
+    min-height: 20px;
+    text-align: center;
+}
+
+.product-sku {
+    padding-bottom: 4px;
+}
+
+.product-COSTCOSku {
+    width: 100%;
+}
+
+.product-SpecialOrder {
+    font-weight: 500;
+    color: #E52B44;
+    text-align: center;
+}
+
+.productPrices {
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    color: #30679A;
+    font-weight: 500;
+}
+
+.productTitle {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+ .productTitle span {
+        font-size: 18px;
+        font-weight: 600;
+        background: #fff;
+        padding: 0 15px;
+ }
+
+ .productTitle span:after {
+            width: 100%;
+            height: 2px;
+            background: #000;
+            content: '';
+            position: absolute;
+            top: 14px;
+            left: 0;
+            z-index: -1;
+}
+
+.productDetailImg {
+    max-width: 200px;
+    text-align: center;
+    margin: auto;
+}
+
+    .productDetailImg img {
+        max-width: 100%;
+        height: auto;
+    }
+
+.prductLink {
+    text-align: center;
+    padding-top: 20px;
+}
+
+    .prductLink a:hover {
+        color: #30679A;
+        text-align: center;
+        text-decoration: none;
+    }
+
+.productMain {
+    min-height: 450px;
+}
+
+.topBreadcub {
+    margin-top: 60px;
+}
+
+.topBreadcub .breadcrumb {
+    background: #30679A;
+}
+
+.topBreadcub .breadcrumb li a {
+    color: #fff;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.breadcrumb > .active {
+    color: #bdb8b8;
+}
+
+.productPrices span {
+    color: #114782;
+}
+
+
+.product-sku span:last-child {
+    color: #484848;
+}

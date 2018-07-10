@@ -1,0 +1,39 @@
+﻿<div class="wrapper">
+    <div class="topBreadcub">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="['/productCatalog']">Category</a></li>
+            <li class="breadcrumb-item active">{{categoryName}}</li>
+        </ol>
+    </div>
+    <div class="productTitle">
+        <span>{{categoryName | uppercase}}</span>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4" *ngFor="let product of products">
+            <div class="productMain">
+                <div class="productDetailImg">
+
+                    <img class="category-picture center-block" src="/images/product/{{product.ThumImageUrl}}" (click)="productPage(product);" />
+                </div>
+
+                <div class="prductLink">
+                    <a class="product-title" [routerLink]="" (click)="productPage(product);">{{product.Name}}</a>
+                </div>
+                <div class="product-sku-COSTCOSku">
+                    <div class="product-sku">
+                        <span><b>Model #</b></span>
+                        <span>{{product.Model}}</span>
+                    </div>
+                    <div class="product-COSTCOSku">
+                        <span><b>Item #</b></span>
+                        <span>{{product.CostcoSku}}</span>
+                    </div>
+                </div> 
+                <div *ngIf="product.IsSpecialOrder==true" class="product-SpecialOrder">* Special Order</div> <!--It will show if special offer is true-->                
+                <div class="productPrices">Delivered Price:<span> {{product.Price | currency:"USD":true}}</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+

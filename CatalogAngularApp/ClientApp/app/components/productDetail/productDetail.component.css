@@ -1,0 +1,152 @@
+﻿.productName {
+    font-size: 17px;
+    font-weight: 500;
+    color: #30679A;
+    text-align: left;
+    margin: 15px 15px 5px 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.pnlProductContent {
+    min-height: 400px;
+    clear: both;
+}
+
+.leftPanel {
+    float: left;
+    width: 40%;
+}
+
+.rightPanel {
+    float: right;
+    width: 60%;
+}
+
+.product_pictures {
+    min-height: 200px;
+    clear: both;
+}
+
+.facilities {
+    text-align: center;
+    margin-bottom: 25px;     
+}
+ .gallery {
+    width: 100%;
+    overflow: visible;
+}
+
+.picture {
+    margin: 20px;
+}
+
+.product-SpecialOrder {
+    font-weight: 500;
+    color: #E52B44;
+    padding-left: 20px;
+}
+ .overview {
+    width: 319px;
+}
+
+.short-description {
+    margin-bottom: 2em;
+}
+
+.description-font {
+    font-size: 20px;
+    color: #000;
+}
+
+.product-sku-COSTCOSku {
+    color: #000;
+    font-size: 13px;
+    width: 100%;
+    min-height: 20px;
+}
+
+.price-quantity {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    min-height: 45px;
+    display: inline-block;
+}
+
+.product-details-page .product-essential .prices {
+    float: left;
+    width: 50%;
+}
+
+.product-price {
+    color: #30679A;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.topBreadcub {
+    margin-top: 60px;
+}
+
+    .topBreadcub .breadcrumb {
+        background: #30679A;
+    }
+
+        .topBreadcub .breadcrumb li a {
+            color: #fff;
+        }
+
+.overview {
+    width: 100%;
+    padding: 0px 20px 20px 20px;
+}
+
+    .overview .description-font {
+        font-size: 16px;
+    }
+
+.breadcrumb > .active {
+    color: #bdb8b8;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.product-sku {
+    padding: 5px 0;
+}
+
+product-COSTCOSku {
+    padding-bottom: 10px;
+}
+.bottomfeatureTab .tab-content{margin-top:35px;}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    background-color: #337ab7 !important;
+}
+.bottomfeatureTab .nav-pills > li > a {
+    border-radius: 4px;
+    background: #80b4e0;
+    color: #fff;
+}
+.spec-name{
+    font-weight: 600;
+}
+
+.bottomfeatureTab ul.nav-pills{
+    display:flex;
+}
+.bottomfeatureTab .nav-pills > li{
+    float: left;
+   flex:1;
+    text-align: center;
+    font-size: 15px;
+}
+#returnsPolicy{min-height:calc(100vh - 50px);}
+.picture img {
+    max-width: 100%;
+    height: auto;
+}

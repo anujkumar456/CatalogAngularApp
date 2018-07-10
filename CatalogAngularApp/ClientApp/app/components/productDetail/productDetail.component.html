@@ -1,0 +1,76 @@
+﻿<div class="wrapper" *ngFor="let prod of product">
+    <div class="topBreadcub">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="['/productCatalog']">Category</a></li>
+            <li class="breadcrumb-item"><a [routerLink]="['/productsShortDetail']">{{categoryName}}</a></li>
+            <li class="breadcrumb-item active">{{prod.Name}}</li>
+        </ol>
+    </div>
+    <div class="pnlProductContent">
+        <div class="col-md-5">
+            <div class="product_pictures">
+                <div class="gallery">
+                    <div class="picture">
+                        <img src="/images/product/{{prod.ThumImageUrl}}" itemprop="image" />
+                    </div>
+                </div>
+            </div>
+            <!--<div class="facilities">
+                <a>See Manufacturer's Specs</a>
+            </div>-->
+        </div>
+        <div class="col-md-7">
+            <div class="productName">
+                <span>{{prod.Name}}</span>
+            </div>
+            <div *ngIf="prod.IsSpecialOrder==true" class="product-SpecialOrder">
+                * Special Order
+            </div>
+            <div class="overview">
+                <div class="short-description description-font">
+                    {{prod.ShortDescription}}
+                </div>
+                <div class="product-sku-COSTCOSku">
+                    <div class="product-sku">
+                        <span><b>Model #</b></span>
+                        <span>{{prod.Model}}</span>
+                    </div>
+                    <div class="product-COSTCOSku">
+                        <span><b>Item #</b></span>
+                        <span>{{prod.CostcoSku}}</span>
+                    </div>
+                </div>
+                <div class="price-quantity">
+                    <div class="prices" itemprop="offers">
+                        <div class="product-price">
+                            <label>Delivered Price: </label>
+                            <span>{{prod.Price | currency:"USD":true}}</span>
+                        </div>
+                        <meta itemprop="priceCurrency" content="USD" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+    <div class="bottomfeatureTab">        
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="tab" href="#features">Features</a></li>
+            <li><a data-toggle="tab" href="#specs">Specs</a></li>
+            <li><a data-toggle="tab" href="#deliveryAndReturns">Delivery and Returns</a></li>
+            <li *ngIf="prod.ReturnPolicy!=''"><a data-toggle="tab" href="#returnsPolicy">Returns/Warranty</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="features" class="tab-pane fade in active" [innerHTML]="prod.Features">
+            </div>
+            <div id="specs" class="tab-pane fade" [innerHTML]="prod.Specs">
+            </div>
+            <div id="deliveryAndReturns" class="tab-pane fade" [innerHTML]="prod.DeliveryInformation">
+            </div>
+            <div id="returnsPolicy" class="tab-pane fade" [innerHTML]="prod.ReturnPolicy">
+            </div>
+        </div>
+    </div>
+</div>
