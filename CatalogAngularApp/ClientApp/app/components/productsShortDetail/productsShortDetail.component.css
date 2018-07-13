@@ -7,8 +7,9 @@
 }
 
 .product-title {
-    font-size: 18px;
-    color: #484848;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 500;
 }
 
 .product-sku-COSTCOSku {
@@ -28,7 +29,7 @@
 }
 
 .product-SpecialOrder {
-    font-weight: 500;
+    font-weight: bold;
     color: #E52B44;
     text-align: center;
 }
@@ -39,32 +40,26 @@
     vertical-align: middle;
     color: #30679A;
     font-weight: 500;
+    font-size:18px;
 }
 
 .productTitle {
-    position: relative;
-    margin-top: 10px;
     margin-bottom: 25px;
     text-align: center;
+    background: #005dab;
+    padding: 5px 0;
+   
 }
 
  .productTitle span {
         font-size: 18px;
         font-weight: 600;
-        background: #fff;
-        padding: 0 15px;
+       color:#fff;
+      
+     
  }
 
- .productTitle span:after {
-            width: 100%;
-            height: 2px;
-            background: #000;
-            content: '';
-            position: absolute;
-            top: 14px;
-            left: 0;
-            z-index: -1;
-}
+
 
 .productDetailImg {
     max-width: 200px;
@@ -92,26 +87,27 @@
     min-height: 450px;
 }
 
-.topBreadcub {
-    margin-top: 60px;
+.logo {
+    padding: 25px 0;
 }
 
 .topBreadcub .breadcrumb {
-    background: #30679A;
+    background: #dfdfdf;
+    border-radius: 0px;
+    margin-bottom:0px;
 }
 
-.topBreadcub .breadcrumb li a {
-    color: #fff;
-}
+    .topBreadcub .breadcrumb li a {
+        color: #000;
+        font-size: 12px;
+    }
 
 .wrapper {
     width: 80%;
     margin: auto;
 }
 
-.breadcrumb > .active {
-    color: #bdb8b8;
-}
+
 
 .productPrices span {
     color: #114782;
@@ -120,4 +116,23 @@
 
 .product-sku span:last-child {
     color: #484848;
+}
+.breadcrumb > .active {
+    font-weight: 600;
+    color: #000;
+    font-size:12px;
+}
+
+.topBreadcub .breadcrumb > li + li:before {
+    color: #ccc;
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border: 2px solid #000;
+    border-top: 0px;
+    border-left: 0px;
+    transform: rotate(-45deg);
+    margin-right: 9px;
+    padding: 0px;
 }

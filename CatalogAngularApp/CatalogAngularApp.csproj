@@ -28,6 +28,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\roboto-fonts\roboto-bold.woff2" />
+    <None Include="wwwroot\roboto-fonts\roboto-light.woff2" />
+    <None Include="wwwroot\roboto-fonts\roboto-medium.woff2" />
+    <None Include="wwwroot\roboto-fonts\roboto-regular.woff2" />
+    <None Include="wwwroot\roboto-fonts\roboto.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
     <TypeScriptCompile Include="ClientApp\app\components\productCatalog\productCatalog.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\productDetail\productDetail.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\productsShortDetail\productsShortDetail.component.ts" />
